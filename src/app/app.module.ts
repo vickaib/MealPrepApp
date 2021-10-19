@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatDividerModule } from '@angular/material/divider';
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
