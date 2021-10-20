@@ -1,18 +1,36 @@
-img {
-  max-width: 5%;
+.topnav {
+  background: #fffdf9ff;
+  padding: 10px;
+  overflow:hidden;
 }
 
-.search {
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
   float: right;
+  margin: 15px;
 }
 
-.search input[type=text] {
-  width: 300px;
+img {
+  max-width: 300px;
+}
+
+.topnav-right input[type=text] {
+  width: 900px;
   background-color: #efebe2ff;
   padding: 10px;
   color: #b7b7b7;
   border-radius: 5px;
   border: none;
+}
+
+button {
+  border: none;
+  background: none;
+  padding-top: 3px;
+  height: 40px;
 }
 
 .field {
