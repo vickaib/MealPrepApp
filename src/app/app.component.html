@@ -1,9 +1,11 @@
-<div class="page">
-<app-header></app-header> 
+<div class="page"> 
 <div style="display: flex; flex-grow: grow">
     <!--this should be the new responsive sidebar-->
     <app-sidebar></app-sidebar>
-    <app-gallery></app-gallery>
+    <div class="main">
+        <app-header></app-header>
+        <app-gallery></app-gallery>
+    </div>
 </div>
 
 <app-footer></app-footer>
