@@ -10,9 +10,9 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
+  height: 15%;
+  flex: 70%;
+  background: #fffdf9ff;
   color: white;
 }
 
@@ -46,7 +46,8 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #e1d5c0ff;
+  height: 100%;
   padding: 20px;
 }
 
@@ -58,7 +59,7 @@ body {
 /* Content in main column */
 .content {
   flex: 70%;
-  background-color: white;
+  background-color:#fbf8eeff;
   padding: 20px;
 }
 
