@@ -3,82 +3,23 @@
     <div class="px-lg-5 body">
   
       <div class="row">
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe1.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 100</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
-        </a>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe2.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 2000</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
-        </a>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe3.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 200</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
-        </a>
-        <!-- End -->
+        <ng-container  *ngFor="let food of foods; let i = index">
+        <a href="https://{{food.link}}" class="col mt-4">
+          <img class = "image" src="{{food.image}}" alt="" class="img-fluid card-img-top">
+          <div class="p-4 card">
+            <h5 class = "title"> <a href="#" class="text-dark">{{food.name}}</a></h5>
+            <span class = "text">Calories: {{food.calories}}</span>
+            <span class = "text">Budget: ${{food.budget}}</span>
+            <span class = "text ml-auto">Time: {{food.time}} minutes</span>
 
-        <!-- Line Break to make two rows -->
-
-        <div class="w-100"></div>
-
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe4.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 200</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
+            
+          </div>
         </a>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe5.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 200</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
-        </a>
-        <!-- End -->
-        <!-- Gallery item -->
-        <a href="#" class="col mt-4">
-            <img class = "image" src="assets/img/recepie/recipe6.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4 card">
-              <h5 class = "title"> <a href="#" class="text-dark">Title of the Food</a></h5>
-              <span class = "text">Calories: 200</span>
-              <span class = "text">Budget: $10.00</span>
-              <span class = "text ml-auto">20 min</span>
-            </div>
-        </a>
-        <!-- End -->
+        <div *ngIf = "((i+1) % 3 == 0)" class="w-100"></div>
+      </ng-container>
+     
       </div>
-      <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show me more</a></div>
+      <div class="py-5 text-right"><a href="" class="btn btn-dark px-5 py-3 text-uppercase">Back to Top</a></div>
     </div>
   </div>
 </body>

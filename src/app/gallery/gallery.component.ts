@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodService } from '../services/food.service';
+import {Food } from '../models/Foods';
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  foods:Food[] = []
+  constructor(private foodService:FoodService) { }
 
   ngOnInit(): void {
+    this.foods = this.foodService.getAll();
   }
 
 }
