@@ -42,3 +42,10 @@ button {
   width: 50%;
   overflow: hidden;
 }
+
+/*CSS for the icon in the search bar*/
+div i{
+  font-size: 20px;
+  margin-left: -25px;
+  cursor: pointer;
+}

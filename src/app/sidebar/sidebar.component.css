@@ -48,6 +48,10 @@ mat-icon {
   padding: 8px;
 }
 
+.profile-button:hover {
+  background-color: #ffffff;
+}
+
 /* Line divider */
 mat-divider {
   margin-top: 17px;
