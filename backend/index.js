@@ -16,9 +16,9 @@ app.listen(3000, () => {
 });
 
 var con = mysql.createConnection({ //sql connection
-    host: "<HOST>",
-    user: "<USER>",
-    password: "<PASSWORD>"
+    host: "mason-meals-backend.ctmcbx2luzlu.us-east-1.rds.amazonaws.com",
+    user: "TeamEndGame1",
+    password: "IT390Fall2021"
 });
 
 con.connect(function(err) { //connect to rds
@@ -27,10 +27,10 @@ con.connect(function(err) { //connect to rds
     //con.end(); 
 });
 
-app.get('/search', (req, res) => { //GET function; we can use POST, etc
+app.get('/', (req, res) => { //GET function; we can use POST, etc
   con.connect(function(err) {
-    con.query('USE <DATABASE>');
-    con.query('SELECT * FROM <TABLE>', function(err, result, fields) { //
+    con.query('USE mason_meals2021');
+    con.query('SELECT * FROM Recipes', function(err, result, fields) { //
         if (err) res.send(err);
         if (result) res.send(result);
     });
