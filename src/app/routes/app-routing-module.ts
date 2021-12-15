@@ -1,12 +1,10 @@
 import { NgModule } from "@angular/core";
 import {Routes, RouterModule} from '@angular/router';
-import { AppComponent } from "./app.component";
-import { GalleryComponent } from "./gallery/gallery.component";
+import { GalleryComponent } from "../gallery/gallery.component";
 
 const routes: Routes = [
-  {path:'search/:searchTerm', component:GalleryComponent},
-  {path:'',  component:GalleryComponent},
-  {path:'**', redirectTo: '/'}
+    {path:'', component: GalleryComponent},
+    {path:'search/:searchTerm', component:GalleryComponent}
 ];
 
 @NgModule({

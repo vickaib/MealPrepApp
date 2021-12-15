@@ -1,13 +1,12 @@
 <div class="topnav">
     <div class="topnav-left">
-        <a href="#"><img src="assets/img/mm_logo-text.png" alt="MasonMeals"/></a>
+        <a href=""><img src="assets/img/mm_logo-text.png" alt="MasonMeals"/></a>
     </div>
     <div class="topnav-right">
-        <form>
-            <input type="text" id="search" placeholder="Search">
-            <button type="submit">
+            <input type="text" id="search" name="search" placeholder="Search" [(ngModel)] = "searchTerm" (change) = "search()">
+            
+            <button type="button" onclick="search()">
                 <mat-icon>search</mat-icon>
             </button>
-        </form>
     </div>
 </div>
