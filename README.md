@@ -1,5 +1,7 @@
 # MasonMeals
 ![image](https://github.com/vickaib/MealPrepApp/assets/91156588/9eb3f2c7-8168-431a-b9f7-eb3840eea456)
+![image](https://github.com/vickaib/MealPrepApp/assets/91156588/a0a337ae-5d87-433b-bb41-98629551be2c)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
